@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ajax Example</title>
+</head>
+
+<body>
+  <p> NOTE: This example doesn't work in Chrome.</p>
+  <p> Use Firefox or Edge browsers.</p>
+  <button>Click here to make AJAX call</button>
+  <p></p>
+  <article id="playspace">
+    Watch jQuery and AJAX replace this content
+  </article>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script>
+    $(function () {
+      $("button").click(function () {
+        $.ajax({
+          url: "AjaxPlay.html",
+          success: function (result) {
+            $("#playspace").html(result);
+          }
+        })
+      })
+    })
+  </script>
+</body>
+
+</html>

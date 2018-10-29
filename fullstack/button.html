@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Priyanka and Poppy's Pizza Hut</h1>
+    <p>This snippet shows 3 related ways to associate a button with an event</p>
+    <ol>
+      <li>Use onclick= directly in HTML - not recommended</li>
+      <li>Use document.getElementById().addEvent()</li>
+      <li>Use $("#whatever").click()</li>
+    </ol>
+    <button onclick="orderPizza()">Order Pizza</button>
+    <button id="addToppingsBTN">Add Toppings</button>
+    <button id="cancelBTN">Cancel Order</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="button.js"></script>
+</body>
+
+</html>
